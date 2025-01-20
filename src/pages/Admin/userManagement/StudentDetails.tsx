@@ -1,11 +1,14 @@
 
+import { useParams } from 'react-router-dom';
 
 const StudentDetails = () => {
-    return (
-        <div>
-            <h2>details</h2>
-        </div>
-    );
+  const { studentId } = useParams();
+
+  return (
+    <div>
+      <h1> This is Student Details of {studentId} </h1>
+    </div>
+  );
 };
 
 export default StudentDetails;
